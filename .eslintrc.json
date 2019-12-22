@@ -1,0 +1,59 @@
+{
+  "parser": "babel-eslint",
+  "env": {
+    "es6": true,
+    "jest": true
+  },
+  "settings": {
+    "react": {
+      "version": "16.7.0"
+    },
+    "import/resolver": {
+      "node": {
+        "moduleDirectory": ["node_modules", "src/"]
+      }
+    }
+  },
+  "extends": [
+    "airbnb",
+    "prettier",
+    "react-app",
+    "eslint:recommended",
+    "plugin:react/recommended",
+    "plugin:jsx-a11y/recommended"
+  ],
+  "parserOptions": {
+    "ecmaFeatures": {
+      "jsx": true
+    },
+    "ecmaVersion": 2018,
+    "sourceType": "module"
+  },
+  "plugins": ["react", "jsx-a11y", "react-hooks"],
+  "rules": {
+    "comma-dangle": ["error", "only-multiline"],
+    "camelcase": "off",
+    "import/no-extraneous-dependencies": [
+      "error",
+      {
+        "devDependencies": true
+      }
+    ],
+    "react/jsx-filename-extension": [
+      "error",
+      {
+        "extensions": [".js", ".jsx"]
+      }
+    ],
+    "react-hooks/rules-of-hooks": "error",
+    "react-hooks/exhaustive-deps": "warn",
+    "import/prefer-default-export": "off",
+    "no-unused-vars": [
+      "error",
+      {
+        "argsIgnorePattern": "^_"
+      }
+    ],
+    "react/jsx-one-expression-per-line": "off"
+  }
+}

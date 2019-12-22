@@ -1,0 +1,84 @@
+{
+  "name": "react-boilerplate",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "axios": "^0.19.0",
+    "lodash": "^4.17.15",
+    "prop-types": "^15.7.2",
+    "react": "^16.11.0",
+    "react-app-polyfill": "^1.0.4",
+    "react-dom": "^16.11.0",
+    "react-redux": "^7.1.1",
+    "react-router-dom": "^5.1.2",
+    "react-scripts": "3.2.0",
+    "reactotron-react-js": "^3.3.6",
+    "redux": "^4.0.4",
+    "redux-actions": "^2.6.5",
+    "redux-saga": "^1.1.3",
+    "styled-components": "^4.4.1"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "cross-env react-app-rewired test",
+    "coverage": "cross-env react-app-rewired test --watchAll=false --coverage"
+  },
+  "jest": {
+    "testMatch": [
+      "**/__tests__/.test.js"
+    ],
+    "setupFilesAfterEnv": [
+      "@testing-library/jest-dom/extend-expect"
+    ],
+    "roots": [
+      "<rootDir>/src"
+    ],
+    "coverageThreshold": {
+      "global": {
+        "statements": 80,
+        "branches": 80,
+        "functions": 80,
+        "lines": 80
+      }
+    },
+    "collectCoverageFrom": [
+      "src/**/*.js",
+      "!src/**/styles.js",
+      "!src/components/index.js",
+      "!src/config/*",
+      "!src/core/**",
+      "!src/index.js",
+      "!src/reducers.js",
+      "!src/sagas.js",
+      "!src/routes.js",
+      "!src/store.js"
+    ]
+  },
+  "devDependencies": {
+    "@testing-library/jest-dom": "^4.2.3",
+    "@testing-library/react": "^9.3.2",
+    "@types/jest": "^24.0.22",
+    "axios-mock-adapter": "^1.17.0",
+    "babel-eslint": "^10.0.1",
+    "babel-loader": "^8.0.5",
+    "cross-env": "^6.0.3",
+    "customize-cra": "^0.8.0",
+    "eslint": "^6.6.0",
+    "eslint-config-airbnb": "^18.0.1",
+    "eslint-config-prettier": "^6.5.0",
+    "eslint-loader": "^3.0.2",
+    "eslint-plugin-import": "^2.18.2",
+    "eslint-plugin-jsx-a11y": "^6.2.3",
+    "eslint-plugin-prettier": "^3.0.1",
+    "eslint-plugin-react": "^7.16.0",
+    "eslint-plugin-react-hooks": "^2.2.0",
+    "jest": "^24.9.0",
+    "jest-styled-components": "^6.3.3",
+    "react-app-rewired": "^2.1.5",
+    "reactotron-redux": "^3.1.2",
+    "reactotron-redux-saga": "^4.2.2",
+    "redux-devtools-extension": "^2.13.8",
+    "redux-mock-store": "^1.5.3"
+  }
+}
